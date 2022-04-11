@@ -7,6 +7,7 @@
 * [Technologies]
 * [Installation]
 * [Setup]
+* [Design]
 * [Resources]
 * [Visuals]
 * [Contributing]
@@ -17,7 +18,19 @@ Herbie is a Client Relationship Application to help improve & better understand 
 ```
 
 ## Goal
-This app is inspired by Drive Capital internal client relationship management application - Herbie. This project is a simple application built using Spring Boot via Gradle with full CRUD functionality. 
+This app is inspired by Drive Capital internal client relationship management application - Herbie. This project is a simple application built using use IntelliJ Idea as my IDE, Spring Boot via Gradle, thymeleaf templating engine, and a H2 in-memory database of 100 fictious client-partner employees. 
+
+Based on the project description it sounded like the application was a more sophisticated Client Relation Management program. I thought and outlined what the minimum viable product for a crm would be and crossed reference that with the application outline. From there...  
+
+I created an four pages application
+    - Home screen
+    - List/Database screen
+        - showing a data table of all known company contacts, the partner relationship, and the contact method most suitable to them. 
+        - I also wanted to allow the user to browse the table, rearrange it in alphabetical or chronological order, and find the client based on any of the categories. 
+        - I paginated the results so the table would short and return only relevant results. 
+        - !!! IMPORTANT !!! - Search feature is case sensitive - !!! IMPORTANT !!!   
+    - Create screen
+    - Edit/Delete screen
 
 ## Technologies
 ```bash
@@ -52,13 +65,6 @@ The Art of CRM - By Max Fatouretchi - ISBN 9781789538922
 Spring Boot Essentials - By Matthew Speake - ISBN 9781801070737
 Getting Started with Spring Boot 2 - By Dan Vega - ISBN 9781839217562
 ```
-
-## Visuals
-![Spring Initializr Generation](D:\Aman\Documents\GitHub\herbie\Spring_Initializr_Page_1)
-![Spring Initializr Generation](D:\Aman\Documents\GitHub\herbie\Spring_Initializr_Page_2)
-![SQL Data Generation](D:\Aman\Documents\GitHub\herbie\SQL_Fictious_Data_V2.PNG)
-```python
-
 
 ## Contributing
 Pull requests are welcome. If you have any edits you wish to make please open an issue first to track keeping purposes. Feel free to create any tests.
