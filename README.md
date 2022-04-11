@@ -17,7 +17,7 @@ Herbie is a Client Relationship Application to help improve & better understand 
 ```
 
 ## Goal
-This project is a simple application built using Spring Boot with full CRUD functionality. 
+This app is inspired by Drive Capital internal client relationship management application - Herbie. This project is a simple application built using Spring Boot via Gradle with full CRUD functionality. 
 
 ## Technologies
 Project is created with:
@@ -32,20 +32,18 @@ Project is created with:
     
 ## Installation
 ```bash
-Download the zip file, extract, and open in Intellij/VS Code via gitbash or terminal. 
+Download the zip file, extract, and open in Intellij or VS Code via gitbash or terminal. 
 ```
 
 ## Setup
 ```bash
-To run this project, download the zip file and access using intellij:
-```
-$ run the ScApplication
-$ open http://localhost:8080/ in your browser
+To run this project, download the zip file and access using intellij or VS Code
+run the ScApplication
+open http://localhost:8080/ in your browser
 ```
 
 ## Resources 
 ```bash
-This app is inspired by Drive Capital's internal client relationship management application - Herbie.
 https://start.spring.io/
 https://www.mockaroo.com/4ff5f150
 The Art of CRM - By Max Fatouretchi - ISBN 9781789538922
