@@ -39,16 +39,15 @@
             <thead>
             <tr>
                 <th>Id</th>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th>Employee</th>
                 <th>Email</th>
                 <th>City</th>
                 <th>Country</th>
                 <th>Phone</th>
+                <th>Spoke to Partner</th>
                 <th>DC Partner</th>
                 <th>Company Name</th>
                 <th>Contact Type</th>
-                <th>Apex Contact</th>
             </tr>
             </thead>
         </table>
@@ -62,7 +61,7 @@
             <div class="col-md-4">
                 <p class="text-center text-muted">&copy;
                     <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}"></span>
-                    <a href="https://tucanoo.com">Red Sea National LLC</a>
+                    <a href="https://redsonazriel.github.io/">Red Sea National LLC</a>
                 </p>
             </div>
         </div>
@@ -86,13 +85,7 @@
           }
         },
         {
-          "data": "firstName",
-          "render": function (data, type, row, meta) {
-            return '<a href="/client/edit/' + row.id + '">' + data + '</a>';
-          }
-        },
-        {
-          "data": "lastName",
+          "data": "employee",
           "render": function (data, type, row, meta) {
             return '<a href="/client/edit/' + row.id + '">' + data + '</a>';
           }
@@ -100,7 +93,11 @@
         {"data": "emailAddress"},
         {"data": "city"},
         {"data": "country"},
-        {"data": "phoneNumber"}
+        {"data": "phoneNumber"},
+        {"data": "spokeToDc"},
+        {"data": "dcPartner"},
+        {"data": "companyName"},
+        {"data": "contactMethod"}
       ]
     });
   });

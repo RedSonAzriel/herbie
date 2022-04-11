@@ -12,20 +12,23 @@ public class Client {
     Long id;
     @Column
     @NotBlank
-    String firstName;
-    @Column
-    @NotBlank
-    String lastName;
+    String employee;
     @Column
     String emailAddress;
-    @Column
-    String address;
     @Column
     String city;
     @Column
     String country;
     @Column
     String phoneNumber;
+    @Column
+    String spokeToDc;
+    @Column
+    String dcPartner;
+    @Column
+    String companyName;
+    @Column
+    String contactMethod;
 
     public Long getId() {
         return id;
@@ -35,20 +38,12 @@ public class Client {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getEmployee() {
+        return employee;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setEmployee(String employee) {
+        this.employee = employee;
     }
 
     public String getEmailAddress() {
@@ -57,14 +52,6 @@ public class Client {
 
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
     }
 
     public String getCity() {
@@ -89,5 +76,37 @@ public class Client {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getSpokeToDc() {
+        return spokeToDc;
+    }
+
+    public void setSpokeToDc(String spokeToDc) {
+        this.spokeToDc = spokeToDc;
+    }
+
+    public String getDcPartner() {
+        return dcPartner;
+    }
+
+    public void setDcPartner(String dcPartner) {
+        this.dcPartner = dcPartner;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getContactMethod() {
+        return contactMethod;
+    }
+
+    public void setContactMethod(String contactType) {
+        this.contactMethod = contactType;
     }
 }

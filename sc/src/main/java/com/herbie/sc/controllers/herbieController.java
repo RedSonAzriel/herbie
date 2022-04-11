@@ -73,12 +73,15 @@ public class herbieController {
         clients.forEach(client -> {
             Map<String, Object> cellData = new HashMap<>();
             cellData.put("id", client.getId());
-            cellData.put("firstName", client.getFirstName());
-            cellData.put("lastName", client.getLastName());
+            cellData.put("employee", client.getEmployee());
             cellData.put("emailAddress", client.getEmailAddress());
             cellData.put("city", client.getCity());
             cellData.put("country", client.getCountry());
             cellData.put("phoneNumber", client.getPhoneNumber());
+            cellData.put("spokeToDc", client.getSpokeToDc());
+            cellData.put("dcPartner", client.getDcPartner());
+            cellData.put("companyName", client.getCompanyName());
+            cellData.put("contactMethod", client.getContactMethod());
             cells.add(cellData);
         });
 
