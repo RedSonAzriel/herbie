@@ -26,9 +26,12 @@ public class Client {
     @Column
     String dcPartner;
     @Column
+    String relationshipStrength;
+    @Column
     String companyName;
     @Column
     String contactMethod;
+
 
     public Long getId() {
         return id;
@@ -92,6 +95,14 @@ public class Client {
 
     public void setDcPartner(String dcPartner) {
         this.dcPartner = dcPartner;
+    }
+
+    public String getRelationshipStrength() {
+        return relationshipStrength;
+    }
+
+    public void setRelationshipStrength(String relationshipStrength) {
+        this.relationshipStrength = relationshipStrength;
     }
 
     public String getCompanyName() {

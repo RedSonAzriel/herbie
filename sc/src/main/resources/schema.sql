@@ -7,6 +7,7 @@ CREATE TABLE CLIENT(
   phone_number VARCHAR(24),
   spoke_to_dc VARCHAR(50),
   dc_partner VARCHAR(64),
+  relationship_strength DECIMAL(10,2),
   company_name VARCHAR(64),
   contact_method VARCHAR(64)
 );

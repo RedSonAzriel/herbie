@@ -25,6 +25,7 @@ public class ClientDatabaseFilter implements org.springframework.data.jpa.domain
             predicates.add(criteriaBuilder.like(root.get("phoneNumber"), '%' + userQuery + '%'));
             predicates.add(criteriaBuilder.like(root.get("spokeToDc"), '%' + userQuery + '%'));
             predicates.add(criteriaBuilder.like(root.get("dcPartner"), '%' + userQuery + '%'));
+            predicates.add(criteriaBuilder.like(root.get("relationshipStrength"), '%' + userQuery + '%'));
             predicates.add(criteriaBuilder.like(root.get("companyName"), '%' + userQuery + '%'));
             predicates.add(criteriaBuilder.like(root.get("contactMethod"), '%' + userQuery + '%'));
         }

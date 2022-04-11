@@ -80,6 +80,7 @@ public class herbieController {
             cellData.put("phoneNumber", client.getPhoneNumber());
             cellData.put("spokeToDc", client.getSpokeToDc());
             cellData.put("dcPartner", client.getDcPartner());
+            cellData.put("relationshipStrength", client.getRelationshipStrength());
             cellData.put("companyName", client.getCompanyName());
             cellData.put("contactMethod", client.getContactMethod());
             cells.add(cellData);

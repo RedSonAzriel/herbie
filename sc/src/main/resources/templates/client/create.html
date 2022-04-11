@@ -35,30 +35,8 @@
 
             <div class="row">
                 <div class="form-group col-6">
-                    <label>First Name</label>
-                    <input class="form-control" name="firstName" th:value="${clientInstance?.firstName}"/>
-                </div>
-                <div class="form-group col-6">
-                    <label>Last Name</label>
-                    <input class="form-control" name="lastName" th:value="${clientInstance?.lastName}"/>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col-6">
-                    <label>Email Address</label>
-                    <input class="form-control" name="emailAddress" th:value="${clientInstance?.emailAddress}"/>
-                </div>
-                <div class="form-group col-6">
-                    <label>Phone Number</label>
-                    <input class="form-control" name="phoneNumber" th:value="${clientInstance?.phoneNumber}"/>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group col">
-                    <label>Address</label>
-                    <input class="form-control" name="address" th:value="${clientInstance?.address}"/>
+                    <label>Employee</label>
+                    <input class="form-control" name="employee" th:value="${clientInstance?.employee}"/>
                 </div>
             </div>
 
@@ -74,8 +52,47 @@
             </div>
 
             <div class="row">
+                <div class="form-group col-6">
+                    <label>Email Address</label>
+                    <input class="form-control" name="emailAddress" th:value="${clientInstance?.emailAddress}"/>
+                </div>
+                <div class="form-group col-6">
+                    <label>Phone Number</label>
+                    <input class="form-control" name="phoneNumber" th:value="${clientInstance?.phoneNumber}"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-6">
+                    <label>Spoke To Partner</label>
+                    <input class="form-control" name="spokeToDc" th:value="${clientInstance?.spokeToDc}"/>
+                </div>
+                <div class="form-group col-6">
+                    <label>Drive Capital Partner</label>
+                    <input class="form-control" name="dcPartner" th:value="${clientInstance?.dcPartner}"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col">
+                    <label>Partner relationship Strength</label>
+                    <input class="form-control" name="relationshipStrength" th:value="${clientInstance?.relationshipStrength}"/>
+                </div>
+
+                <div class="form-group col">
+                    <label>Company Name</label>
+                    <input class="form-control" name="companyName" th:value="${clientInstance?.companyName}"/>
+                </div>
+
+                <div class="form-group col">
+                    <label>Contact Method</label>
+                    <input class="form-control" name="contactMethod" th:value="${clientInstance?.contactMethod}"/>
+                </div>
+            </div>
+
+            <div class="row">
                 <div class="col">
-                    <button type="submit" class="btn btn-success btn-block">Create Client</button>
+                <button type="submit" class="btn btn-success btn-block">Create Client</button>
                 </div>
             </div>
         </form>
