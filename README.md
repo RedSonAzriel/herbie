@@ -20,6 +20,7 @@ Herbie is a Client Relationship Application to help improve & better understand 
 This app is inspired by Drive Capital internal client relationship management application - Herbie. This project is a simple application built using Spring Boot via Gradle with full CRUD functionality. 
 
 ## Technologies
+```bash
 Project is created with:
     * Spring Boot 2.6.4
         - Spring Boot DevTools
@@ -29,7 +30,8 @@ Project is created with:
         - Thymeleaf
     * Java
     * Gradle
-    
+```python 
+
 ## Installation
 ```bash
 Download the zip file, extract, and open in Intellij or VS Code via gitbash or terminal. 
