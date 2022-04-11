@@ -30,7 +30,7 @@ Project is created with:
         - Thymeleaf
     * Java
     * Gradle
-```python 
+``` 
 
 ## Installation
 ```bash
